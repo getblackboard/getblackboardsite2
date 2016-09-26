@@ -5,3 +5,30 @@ nav {
   padding: 10px;
   background: $main-color;
 }
+.team {
+  background: #1b1b1b;
+  background: linear-gradient(to right, #000, #4e4e4e, #000);
+  color: #ffe;
+  padding: 1.175rem;
+}
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem .5rem 0 0;
+  float: none;
+}
+.centered {
+  justify-content: center;
+  align-items: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+  vertical-align: middle;
+}
+.chris, .paul {
+  max-width: 360px;
+  padding: 20px;
+}

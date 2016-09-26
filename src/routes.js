@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Route, IndexRoute, Link } from 'react-router'
+import chris from '../src/img/chris.jpg'
+import paul from '../src/img/paul.jpg'
 
 // Main component
 class App extends Component {
@@ -29,8 +31,22 @@ class Home extends Component {
     render(){
         return (
             <div>
-                <h2>Home</h2>
-                <div>Some home page content</div>
+              <section className="team">
+              <h1>Who We Are</h1>
+                  <div className="members centered">
+                      <div className="chris" title="Co-Founder" firstname="Chris" lastname="Wirth">
+                          <img src={ chris } alt="" />
+                          <h2>Chris Wirth</h2>
+                          <h3>Co-Founder | Developer</h3>
+                      </div>
+                      <div className="paul" title="Co-Founder" firstname="Paul" lastname="Butler III">
+                          <img src={ paul } alt="" />
+                          <h2>Paul Butler III</h2>
+                          <h3>Co-Founder | Developer</h3>
+                      </div>
+                  </div>
+
+              </section>
             </div>
         )
     }
